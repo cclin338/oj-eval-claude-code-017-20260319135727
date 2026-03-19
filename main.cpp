@@ -78,7 +78,7 @@ struct Train {
     bool isReleased;
 
     // Seat availability: [day][station]
-    int seatAvailability[MAX_DAYS][MAX_STATIONS];
+    short seatAvailability[MAX_DAYS][MAX_STATIONS];
 
     Train() : stationNum(0), seatNum(0), isReleased(false) {
         memset(trainID, 0, sizeof(trainID));

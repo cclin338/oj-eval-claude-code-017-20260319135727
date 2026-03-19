@@ -1,0 +1,22 @@
+# OJ evaluation conflicts
+CMakeFiles/
+CMakeCache.txt
+
+# Build artifacts
+code
+*.o
+*.so
+*.a
+*.out
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store

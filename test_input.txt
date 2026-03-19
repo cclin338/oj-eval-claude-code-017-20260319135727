@@ -1,0 +1,5 @@
+add_user -c admin -u user1 -p password123 -n 张三 -m user1@test.com -g 5
+login -u user1 -p password123
+query_profile -c user1 -u user1
+logout -u user1
+exit

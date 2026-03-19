@@ -1,0 +1,12 @@
+add_user -c admin -u user1 -p password123 -n 张三 -m user1@test.com -g 5
+login -u user1 -p password123
+add_user -c user1 -u user2 -p pass456 -n 李四 -m user2@test.com -g 3
+query_profile -c user1 -u user2
+modify_profile -c user1 -u user2 -n 王五 -m new@test.com
+query_profile -c user1 -u user2
+add_train -i HAPPY_TRAIN -n 3 -m 1000 -s 上院|中院|下院 -p 114|514 -x 19:19 -t 600|600 -o 5 -d 06-01|08-17 -y G
+add_train -i HAPPY_TRAIN -n 3 -m 1000 -s 上院|中院|下院 -p 114|514 -x 19:19 -t 600|600 -o 5 -d 06-01|08-17 -y G
+logout -u user1
+clean
+add_user -c admin -u test -p test123 -n 测试 -m test@test.com -g 1
+exit
